@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(.43, 1.1, .62, 1.08);
+}
+
+*::selection {
+    background-color: #9d2ace;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(95, 95, 95);
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    stop-opacity: 7rem;
+}
+
+
+
+section {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2px;
+}
+
+.profile form .p-btn,
+.delete-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 18px;
+    padding: 1px 3px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.profile form .p-btn {
+    background-color: gold;
+    color: black;
+    margin-right: 1rem;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+}
+
+.profile form .p-btn:hover,
+.delete-btn:hover {
+    letter-spacing: .1rem;
+}
+
+
+
+/* BUTTON */
+.btn {
+    margin-top: 1px;
+    font-size: 18px;
+    padding: 1px 3px;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: .2s linear;
+    background-color: rgb(35, 138, 235);
+    color: black;
+}
+
+.btn:hover {
+    letter-spacing: 1px;
+    background-color: rgb(35, 138, 235);
+    color: white;
+}
+
+
+/* HEADING */
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-flow: column;
+    background-color: #222;
+    min-height: 15rem;
+}
+
+.heading h3 {
+    font-size: 3rem;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 2rem;
+}
+
+.heading p {
+    font-size: 1.5rem;
+    color: #777;
+}
+
+.heading p a {
+    color: #9d2ace;
+}
+
+.heading p a:hover {
+
+    color: #9984ef;
+}
+
+.title {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 40px;
+    color: #222;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+/* CSS for the "View More" button */
+.btn-view-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #222;
+    /* Primary color */
+    color: #fff;
+    /* Text color */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view-more:hover {
+    background-color: #0056b3;
+    /* Darker color on hover */
+}
+
+
+
+
+/* FRONT */
+
+#webpage {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#webpage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(image/jacaranda.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(50%);
+}
+
+#webpage_content {
+    position: absolute;
+}
+
+#webpage_content h1 {
+    color: #fff;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 2px #000;
+}
+
+#webpage_content h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-family: cursive;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.container {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.container form p {
+    font-size: 15px;
+    color: gray;
+}
+
+.container form p a {
+    color: black;
+}
+
+.container form p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* MENU */
+
+#menu .container {
+    background-color: #cbcbcb;
+}
+
+#menu .py-5 {
+    background-color: #e9e9e9;
+}
+
+
+
+
+
+/* CARD */
+
+
+.card .card-body .box .fa-shopping-cart {
+    position: absolute;
+    top: 2px;
+    height: 30px;
+    width: 35px;
+    line-height: 20px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    transition: .2s linear;
+}
+
+.card .card-body .box .fa-shopping-cart:hover {
+    background-color: black;
+    color: white;
+}
+
+.card .card-body .box .fa-shopping-cart {
+    right: -3rem;
+}
+
+.card .card-body .box:hover .fa-shopping-cart {
+    right: 2px;
+}
+
+.card .card-body .box {
+    padding: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .card-body .box img {
+    margin-top: 1rem;
+}
+
+.card .card-body .box .name {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: black;
+}
+
+.card .card-body .box .flex {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card .card-body .box .flex .price {
+    margin-right: auto;
+    font-size: 18px;
+    color: #222;
+}
+
+.card .card-body .box .flex .price span {
+    color: #777;
+    font-size: 18px;
+}
+
+.card .card-body .box .description {
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.card .card-body .box .flex .qty {
+    padding-left: .5rem;
+    margin-top: .5rem;
+    width: 50px;
+    border: 1px solid black;
+    font-size: 18px;
+    color: black;
+}
+
+.row .more-btn .btn {
+    background-color: rgb(47, 110, 182);
+    color: white;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 1rem;
+    margin-left: 5.5rem;
+}
+
+
+
+
+/* FOOTER */
+.footer {
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    margin-top: 5rem;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+
+.footer .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2px;
+    align-items: flex-start;
+}
+
+.footer .grid .box {
+    border: .2px solid black;
+    padding: 1px;
+    text-align: center;
+}
+
+.footer .grid .box i {
+    font-size: 20px;
+    margin-top: .5rem;
+    margin-bottom: .5px;
+}
+
+.footer .grid .box i:hover {
+    color: #6d1194;
+}
+
+.footer .grid .box h3 {
+    margin: 1px 0;
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.footer .grid .box p,
+.footer .grid .box a {
+    font-size: 12px;
+    color: #777;
+    line-height: 1;
+    margin-bottom: .5rem;
+}
+
+.footer .grid .box a:hover {
+    text-decoration: underline;
+    color: #6d1194;
+}
+
+.credit {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    padding: 2px;
+    color: rgb(56, 55, 55);
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer div {
+    text-align: end;
+    margin-bottom: 1px;
+
+}
+
+
+
+/* media queries */
+/* @media (max-width:991px){
+    html{
+        font-size: 65%;
+    }
+}
+@media (max-width:768px){
+        #menu .card-body {
+            height: 250px;
+        }
+        #menu .card-body img {
+            height: 190px;
+        }
+    }
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+} */

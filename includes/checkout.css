@@ -1,0 +1,100 @@
+/* CHECKOUT */
+
+.checkout .title {
+    margin-bottom: 1rem;
+}
+
+.checkout form {
+    max-width: 30rem;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.checkout form h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+    padding: 1rem 0;
+    color: black;
+}
+
+.checkout form .cart-items {
+    background-color: black;
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.checkout form .cart-items h3 {
+    color: white;
+}
+
+.checkout form .cart-items .btn {
+    background-color: rgb(4, 176, 4);
+    font-size: 16px;
+}
+
+.checkout form .cart-items .btn:hover {
+    color: white;
+}
+
+.checkout form .cart-items p {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+    margin: 1rem 0;
+    line-height: 1;
+    font-size: 18px;
+    padding: 1px;
+    padding-bottom: .5px;
+}
+
+.checkout form .cart-items p .name {
+    color: #777;
+}
+
+.checkout form .cart-items p .price {
+    color: rgb(4, 176, 4);
+}
+
+.checkout form .cart-items .grand-total {
+    background-color: white;
+    padding: .5rem .5rem;
+}
+
+.checkout form .cart-items .grand-total .price {
+    color: red;
+}
+
+.checkout form .user-profile p {
+    font-size: 15px;
+    line-height: .5;
+    padding: 1px 0;
+}
+
+.checkout form .user-profile p i {
+    color: #777;
+    margin-right: .5rem;
+}
+
+.checkout form .user-profile p span {
+    color: black;
+}
+
+.checkout form .user-profile .box {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1.5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+
+.checkout form .user-profile .btn {
+    background-color: rgb(4, 176, 4);
+    font-size: 15px;
+}
+
+.checkout form .user-profile .btn:hover {
+    color: white;
+}

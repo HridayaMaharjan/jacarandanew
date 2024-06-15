@@ -1,0 +1,45 @@
+/* navbar */
+.navbar {
+    padding: 0.5px 1px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1px;
+    margin-top: 5px;
+    
+  }
+  .navbar-brand img {
+    max-height: 50px; /* Adjust size as needed */
+  }
+  .navbar-nav .nav-item .nav-link {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-nav .dropdown-menu {
+    min-width: 10rem; /* Adjust dropdown width if needed */
+  }
+  
+  .nav-item{
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  .nav-item:hover{
+    color: #ba37f1;
+  }
+  .dropdown-item{
+    transition: .2s linear;
+  }
+  .dropdown-item:hover{
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  .navbar-nav.mx-auto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .navbar-nav.mx-auto .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  

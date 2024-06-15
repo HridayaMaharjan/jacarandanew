@@ -1,0 +1,105 @@
+.items .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.items .box-container .box{
+    border: 1px solid black;
+    padding: 1rem;
+    position: relative;
+}
+.items .box-container img{
+    height: 10rem;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+.items .box-container .name{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.items .box-container .box .flex{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.items .box-container .box .flex .price{
+    margin-right: auto;
+    font-size: 20px;
+    color: black;
+}
+.items .box-container .box .flex .price span{
+    color: gray;
+    font-size: 18px;
+}
+.items .box-container .box .flex .qty{
+    padding-left: .5rem;
+    width: 3rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    font: 12px;
+    color: black;
+}
+.items .box-container .box .flex .fa-edit{
+    width: 2rem;
+    background-color: blueviolet;
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+    height: 1.5rem;
+    border: 1px solid black;
+}
+.items .box-container .box .flex .fa-edit:hover{
+    color: white;
+}
+.items .box-container .box .fa-times{
+    position: absolute;
+    top: 1rem; right: 1rem;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+    font-size: 20px;
+}
+.items .box-container .box .fa-times:hover{
+    background-color: black;
+    color: white;
+}
+.items .box-container .box .sub-total{
+    margin-top: 1rem;
+    font-size: 15px;
+    color: gray;
+}
+.items .box-container .box .sub-total span{
+    color: red;
+}
+.items .more-btn{
+    margin-top: 2rem;
+    text-align: center;
+}
+.items .cart-total{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+    padding: .5rem;
+}
+.items .cart-total p{
+    font-size: 22px;
+    color: gray;
+}
+.items .cart-total p span{
+    color: red;
+}
+.items .cart-total .btn{
+    margin-top: 0;
+}
